@@ -60,7 +60,7 @@
                 $resultado = mysqli_query($conn,$consulta);
 
                 if (mysqli_num_rows($resultado) > 0) {
-                    // El email existe en la tabla Clientes
+                    // El email introducido por el usuario existe en la tabla Clientes
                     $sentencia = "INSERT INTO Contacto (nombre, correo, mensaje, fecha) VALUES ('$nombre', '$email', '$mensaje', NOW())";
 
                     // Ejecutar la consulta
