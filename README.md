@@ -10,7 +10,7 @@ No obstante también si accede el usuario con DNI 49465917R tendrá acceso a una
 
 Los archivos están ubicados en la misma carpeta
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.001.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.001.png)
 
 **Flujo de navegación
 
@@ -24,21 +24,21 @@ Los archivos están ubicados en la misma carpeta
 
 En esta página, se presenta una breve descripción de la web y los servicios que ofrece. Además, se incluye un menú a la izquierda que proporciona enlaces a diferentes secciones del sitio.
 
-![](Fotos readme/Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.002.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.002.png)
 
 Al pasar el cursor sobre el menú, se destacan las opciones disponibles, aunque algunas de ellas pueden no estar accesibles.
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.003.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.003.png)
 
 En el código, se utiliza la variable $\_SESSION['usuario'] para gestionar la sesión del usuario. Si esta variable está definida y su valor es '49465917R', se muestra un enlace adicional que dirige a la página adminPanel.php. Esto indica que el acceso a esta página está reservado para un usuario específico.
 
 En el inicio del código, se configura el manejo de errores de PHP con las líneas:
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.004.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.004.png)
 
 Estas líneas permiten mostrar todos los errores durante la ejecución del script, facilitando la detección y corrección de posibles problemas en el código PHP.
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.005.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.005.png)
 
 
 
@@ -69,7 +69,7 @@ Para poder comprar necesitas estar registrado en la base de datos e iniciado ses
 
 Además del menú de la izquierda, en el centro de la página contamos con un formulario en el cual todos los campos son obligatorios:
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.006.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.006.png)
 
 
 
@@ -86,7 +86,7 @@ Además del menú de la izquierda, en el centro de la página contamos con un fo
 
 En el código está puesto que el patrón del DNI y el del teléfono, además de una función para que al introducir 3 números en el teléfono ponga un espacio y sea más legible y bonito, todos los datos se envían a procesar\_registro.php
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.007.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.007.png)
 
 **procesar\_registro.php**
 
@@ -96,19 +96,19 @@ Al pulsar el botón de registrarse en procesar registro se comprueba si el méto
 
 Seguidamente se imprime un texto en pantalla y se redirige a formulario.php para que puedas iniciar sesión.
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.008.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.008.png)
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.009.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.009.png)
 
 Para hacer que te redirija a formulario.php en 4 segundos, lo he hecho con javascript, coje el span con el id countdown y cada segundo le resta 1 hasta que llegue a 0 a la variable segundo la cual es la que se muestra en el span
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.010.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.010.png)
 
 **formulario.php**
 
 En el centro de la página contamos con un formulario con los dos campos necesarios para iniciar sesión.
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.011.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.011.png)
 
 Al introducir datos en los dos campos y darle a iniciar sesión se procesan los datos en procesar\_login.php
 
@@ -120,9 +120,9 @@ Primero, realizamos una consulta a la BD para seleccionar la contraseña del usu
 
 Si la consulta ha obtenido un resultado, se extrae la contraseña almacenada en la base de datos y se compara con la contraseña proporcionada por el usuario. Si no coinciden, se imprime un mensaje indicando que la contraseña es incorrecta. Si es correcta, primero almacena en la variable de sesión $SESSION[‘usuario’] el DNI y después te redirige a productos.php
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.012.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.012.png)
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.013.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.013.png)
 
 
 
@@ -140,25 +140,25 @@ Si la consulta ha obtenido un resultado, se extrae la contraseña almacenada en 
 
 En productos.php, como ya tenemos un valor en la variable $SESSION[‘usuario’] nos aparece el contenido de la página. Dentro del div contenido-productos, se encuentran los productos que son cada uno un div.
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.014.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.014.png)
 
 Esto se hace seleccionando todos los productos y de cada columna obtenida sacar los datos del producto:
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.015.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.015.png)
 
 Además también existe un desplegable con todas las categorías disponibles para filtrar. Esto se hace primero haciendo una query a la BD seleccionando los nombres de las categorías que después se ponen como valor del desplegable.
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.016.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.016.png)
 
 El desplegable tiene un función llamada filtrarProductos() que se activa cuando cambia el valor de este. La función realiza una solicitud AJAX al servidor basándose en la categoría seleccionada por el usuario. El resultado obtenido del servidor se inserta dinámicamente en el contenido de otra parte de la página obtener\_productos.php que hace lo mismo que productos.php pero la consulta se hace indicando la categoría seleccionada por el usuario y actualiza el div identificado por el id "contenido-productos".
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.017.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.017.png)
 
 Para añadir un producto al carro podemos indicar las unidades que están limitadas al stock actual del producto. Si hacemos click en añadir al carro primero se muestra un mensaje diciendo producto añadido al carro y seguidamente se ejecuta la función agregarAlCarro() que agrega un producto al carro de compras mediante una solicitud AJAX al servidor. La información del producto, la cantidad y el usuario se envían al servidor para su procesamiento en el archivo PHP anadircarro.php.
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.018.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.018.png)
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.019.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.019.png)
 
 **obtener\_productos.php**
 
@@ -192,7 +192,7 @@ Recibimos el valor de la categoría de productos.php y hacemos la consulta de lo
 
 Primero comprueba que exista una sesión y después el método de solicitud. Con el usuario insertador insertamos las variables recibidas en la tabla carrocliente, si ha salido mal se imprime texto y si no no llega a mostrarse esta pagina y es como si productos.php se actualizara
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.022.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.022.png)
 
 Si queremos ver el carro del cliente vamos a la página carrocliente.php
 
@@ -200,7 +200,7 @@ Si queremos ver el carro del cliente vamos a la página carrocliente.php
 
 **carrocliente.php**
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.023.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.023.png)
 
 Funciona como productos.php, seleccionando mediante una sentencia todo de la tabla carrocliente. Además, gracias a que almacenamos el id del producto se puede mostrar mediante otra sentencia el nombre y precio del producto.
 
@@ -208,11 +208,11 @@ Esto se muestra en una formulario que contiene una tabla, que contiene un checkb
 
 Si hacemos click en comprar seleccionados iremos a procesar\_compra.php
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.024.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.024.png)
 
 **procesar\_compra.php**
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.025.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.025.png)
 
 Aquí nos encontramos con un ticket con los artículos que queremos comprar, esto se hace primero seleccionando el id del carro que es lo único que pasamos del formulario anterior mediante el checkbox, por lo que ahora tenemos que sacar su id, precio, cantidad de la tabla carrocliente.
 
@@ -222,11 +222,11 @@ Contamos con dos botones para pagar con tarjeta o contrareembolso, los dos hacen
 
 En cada uno se pasan 2 variables, $carrosSeleccionados que es el id del carro y $cantidad la cantidad de productos del carro
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.026.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.026.png)
 
 **pagoContraReembolso.php**
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.027.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.027.png)
 
 Con el usuario eliminador nos conectamos a la BD cibershop, si la variable $carrosSeleccionados existe por cada id de carro hacemos las siguientes operaciones: 
 
@@ -240,7 +240,7 @@ Con el usuario eliminador nos conectamos a la BD cibershop, si la variable $carr
 
   - Actualizamos el stock restando la cantidad de productos que compramos
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.028.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.028.png)
 
 
 
@@ -251,15 +251,15 @@ Con el usuario eliminador nos conectamos a la BD cibershop, si la variable $carr
 
 **pagoTarjeta.php**
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.029.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.029.png)
 
 En pagoTarjeta.php hay un formulario con tres campos, número de la tarjeta de crédito, CVV y fecha de expiración. El primer campo cuenta con un script para que al introducir 4 números se ponga un espacio y sea más legible y bonito, además se limita la cantidad de carácteres. También se limitan en el CVV y en la fecha de expiración además de poner un patrón para poder enviar el formulario.
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.030.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.030.png)
 
 **procesar\_pago.php**
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.031.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.031.png)
 
 Al enviarse el formulario, se hacen las mismas operaciones de pagoContraReembolso.php
 
@@ -280,19 +280,19 @@ Con el usuario eliminador nos conectamos a la BD cibershop, si la variable $carr
 
 **contacto.php**
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.032.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.032.png)
 
 Hay tres campos en los que se tiene que poner el nombre, email y el mensaje a enviar. Cuando le das click a enviar se envía el contenido a procesar-contacto.php
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.033.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.033.png)
 
 **procesar-contacto.php**
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.034.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.034.png)
 
 Con el usuario insertador nos conectamos a cibershop, seleccionamos los clientes de la bd y verificamos si existe alguno con el email indicado por el usuario. Si es así se inserta el nombre, email, mensaje y fecha actual en la tabla contacto, y después te redirige a productos.php, si no salta un mensaje indicando que el correo debe de estar registrado.
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.035.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.035.png)
 
 
 
@@ -310,11 +310,11 @@ Con el usuario insertador nos conectamos a cibershop, seleccionamos los clientes
 
 **cerrarSesion.php**
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.036.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.036.png)
 
 En esta parte tenemos dos botones para decir si queremos cerrar sesión, si decimos si se hace un session\_destroy() y nos redirige a formulario.php. Si decimos que no nos redirige a productos.php
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.037.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.037.png)
 
 
 
@@ -332,12 +332,12 @@ En esta parte tenemos dos botones para decir si queremos cerrar sesión, si deci
 
 **no\_authorized.php**
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.038.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.038.png)
 
 Esta pestaña es a la que nos redirige adminPanel.php cuando no tenemos la variable $SESSION[‘usuario’]=49465917R.
 
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.039.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.039.png)
 
 
 
@@ -359,11 +359,11 @@ Esta pestaña es a la que nos redirige adminPanel.php cuando no tenemos la varia
 
 **adminPanel.php**
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.040.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.040.png)
 
 A esta página aparece en el menú si la variable $SESSION[‘usuario’]=49465917R (se comprueba en cada página). Dentro de ésta hay un botón que ejecuta crearBD.php
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.041.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.041.png)
 
 
 
@@ -389,7 +389,7 @@ A esta página aparece en el menú si la variable $SESSION[‘usuario’]=494659
 
 **crearBD.php**
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.042.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.042.png)
 
 Al ejecutar crearBD.php, se inicia estableciendo la conexión con el usuario "root" en la base de datos "cibershop". A continuación, se verifica la existencia de la base de datos y se crea si aún no existe. Posteriormente, se procede a eliminar las tablas si ya existen y se vuelven a crear.
 
@@ -399,11 +399,11 @@ Al finalizar, se lleva a cabo la destrucción de la sesión, seguida de la redir
 
 Si se quiere crear todo de una si no esta configurado desde el Visual Studio (por ejemplo) se comenta el primer if de la página (línea 7 a 11) y se puede ejecutar sin errores (siempre que tengas los archivos SQL).
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.043.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.043.png)
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.044.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.044.png)
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.045.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.045.png)
 
 **Base de datos**
 
@@ -441,7 +441,7 @@ En la base de datos hay 5 tablas:
   - FK: DNI\_cliente (Clave Foránea referenciando a Clientes), Id\_producto (Clave Foránea referenciando Productos)
   - Atributos: Cantidad
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.046.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.046.png)
 
 
 
@@ -466,11 +466,11 @@ En la base de datos hay 5 tablas:
 
 **post\_max\_size = 40M**
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.047.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.047.png)
 
 **allow\_url\_fopen = off**
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.048.png)
+![](Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.048.png)
 
-[ref1]: Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.020.png
-[ref2]: Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.021.png
+[ref1]: Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.020.png
+[ref2]: Fotos/Apose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.021.png
