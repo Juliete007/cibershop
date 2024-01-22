@@ -397,7 +397,8 @@ El script incluye una función que ejecuta todas las sentencias presentes en arc
 
 Al finalizar, se lleva a cabo la destrucción de la sesión, seguida de la redirección a formulario.php. 
 
-Si se quiere crear todo de una si no esta configurado desde el Visual Studio (por ejemplo) se comenta el primer if de la página (línea 7 a 11) y se puede ejecutar sin errores (siempre que tengas los archivos SQL).
+> [!WARNING]
+> Si se quiere crear todo de una si no esta configurado desde el Visual Studio (por ejemplo) se comenta el primer if de la página (línea 7 a 11) y se puede ejecutar sin errores (siempre que tengas los archivos SQL).
 
 ![](Fotos/Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.043.png)
 
@@ -406,8 +407,8 @@ Si se quiere crear todo de una si no esta configurado desde el Visual Studio (po
 ![](Fotos/Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.045.png)
 
 **Base de datos**
-
-En la base de datos hay 5 tablas:
+> [!NOTE]
+> En la base de datos hay 5 tablas:
 
 - Clientes:
 
