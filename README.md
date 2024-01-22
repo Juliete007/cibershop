@@ -24,7 +24,7 @@ Los archivos están ubicados en la misma carpeta
 
 En esta página, se presenta una breve descripción de la web y los servicios que ofrece. Además, se incluye un menú a la izquierda que proporciona enlaces a diferentes secciones del sitio.
 
-![](Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.002.png)
+![](Fotos readme/Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.002.png)
 
 Al pasar el cursor sobre el menú, se destacan las opciones disponibles, aunque algunas de ellas pueden no estar accesibles.
 
