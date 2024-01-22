@@ -30,7 +30,8 @@ Al pasar el cursor sobre el menú, se destacan las opciones disponibles, aunque 
 
 ![](Fotos/Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.003.png)
 
-En el código, se utiliza la variable $\_SESSION['usuario'] para gestionar la sesión del usuario. Si esta variable está definida y su valor es '49465917R', se muestra un enlace adicional que dirige a la página adminPanel.php. Esto indica que el acceso a esta página está reservado para un usuario específico.
+> [!NOTE]
+> En el código, se utiliza la variable $\_SESSION['usuario'] para gestionar la sesión del usuario. Si esta variable está definida y su valor es '49465917R', se muestra un enlace adicional que dirige a la página adminPanel.php. Esto indica que el acceso a esta página está reservado para un usuario específico.
 
 En el inicio del código, se configura el manejo de errores de PHP con las líneas:
 
@@ -100,7 +101,8 @@ Seguidamente se imprime un texto en pantalla y se redirige a formulario.php para
 
 ![](Fotos/Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.009.png)
 
-Para hacer que te redirija a formulario.php en 4 segundos, lo he hecho con javascript, coje el span con el id countdown y cada segundo le resta 1 hasta que llegue a 0 a la variable segundo la cual es la que se muestra en el span
+> [!TIP]
+> Para hacer que te redirija a formulario.php en 4 segundos, lo he hecho con javascript, coje el span con el id countdown y cada segundo le resta 1 hasta que llegue a 0 a la variable segundo la cual es la que se muestra en el span
 
 ![](Fotos/Aspose.Words.f610e770-a25b-401f-8c05-ab6782a68a05.010.png)
 
